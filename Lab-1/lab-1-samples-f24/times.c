@@ -72,7 +72,7 @@ int main(){
 	printf("Ticks: %li\n",(end_ticks - start_ticks));
 	printf("User time: %lf\n", (double)t_buf.tms_utime / ticks_per_second);
 	printf("System time: %lf\n", (double)t_buf.tms_stime / ticks_per_second);
-	printf("Children user time: %lf\n", (double)t_buf.tms_cstime / ticks_per_second);
+	printf("Children user time: %lf\n", (double)t_buf.tms_cutime / ticks_per_second);
 	printf("Children System time: %lf\n", (double)t_buf.tms_cstime / ticks_per_second);
 	return 0;
 }
